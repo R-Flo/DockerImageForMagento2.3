@@ -107,7 +107,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install golang-go \
 
 ADD .docker/config/custom-xdebug.ini /usr/local/etc/php/conf.d/custom-xdebug.ini
 COPY .docker/bin/* /usr/local/bin/
-COPY .docker/users/* /var/www/
 RUN chmod +x /usr/local/bin/*
 
 ADD https://raw.githubusercontent.com/colinmollenhour/credis/master/Client.php /credis.php
