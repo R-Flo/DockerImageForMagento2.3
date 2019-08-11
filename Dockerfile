@@ -55,7 +55,7 @@ RUN wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.
     && cd libsodium-1.0.18 \
     && ./configure \
     && make && make install \
-    # && pecl install -f libsodium
+    && pecl install -f libsodium
 
 # Install oAuth
 
